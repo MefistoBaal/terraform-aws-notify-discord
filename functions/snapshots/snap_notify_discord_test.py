@@ -7,7 +7,7 @@ from snapshottest import Snapshot
 snapshots = Snapshot()
 
 snapshots[
-    "test_event_get_slack_message_payload_snapshots event_cloudwatch_alarm.json"
+    "test_event_get_discord_message_payload_snapshots event_cloudwatch_alarm.json"
 ] = [
     {
         "username": "AWS",

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-    Slack Notification Test
+    Discord Notification Test
     -----------------------
 
     Unit tests for `main.py`

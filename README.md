@@ -22,12 +22,13 @@ in your Discord space.
 
 ```hcl
 module "notify_discord" {
-  source  = "github.com/MefistoBaal/terraform-aws-notify-discord"
+  source = "github.com/MefistoBaal/terraform-aws-notify-discord"
 
   sns_topic_name = "discord-topic"
 
   discord_webhook_url = "https://discord.com/api/webhooks/XXX/XXXXXXXX"
-  discord_username    = "reporter"
+  discord_username    = "aws"
+  discord_avatar_url  = "https://i.imgur.com/eeYUFCO_d.webp"
 }
 ```
 
@@ -39,15 +40,15 @@ specify `create_sns_topic = false` as an argument and specify the name of existi
 ## Examples
 
 - [notify-discord-simple](https://github.com/MefistoBaal/terraform-aws-notify-discord/tree/master/examples/notify-discord-simple)
-  - Creates SNS topic which sends messages to Discord space.
+    - Creates SNS topic which sends messages to Discord space.
 - [cloudwatch-alerts-to-discord](https://github.com/MefistoBaal/terraform-aws-notify-discord/tree/master/examples/cloudwatch-alerts-to-discord)
-  - End to end example which shows how to send AWS Cloudwatch alerts to Discord space and use KMS to encrypt webhook
-  URL.
+    - End to end example which shows how to send AWS Cloudwatch alerts to Discord space and use KMS to encrypt webhook
+      URL.
 
 ## Local Development and Testing
 
-See the [functions](https://github.com/MefistoBaal/terraform-aws-notify-discord/tree/master/functions) for
-further details.
+See the [functions](https://github.com/MefistoBaal/terraform-aws-notify-discord/tree/master/functions) for further
+details.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
@@ -143,5 +144,5 @@ from [these awesome contributors](https://github.com/MefistoBaal/terraform-aws-n
 
 ## License
 
-Apache 2 Licensed.
-See [LICENSE](https://github.com/MefistoBaal/terraform-aws-notify-discord/tree/master/LICENSE) for full details.
+Apache 2 Licensed. See [LICENSE](https://github.com/MefistoBaal/terraform-aws-notify-discord/tree/master/LICENSE) for
+full details.
