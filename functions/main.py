@@ -214,9 +214,8 @@ def format_default(
             "icon_url": os.environ["DISCORD_AVATAR_URL"]
         },
         "title": subject if subject else "Message",
-        "fallback": "A new message",
-        "text": "AWS notification",
-        "mrkdwn_in": ["value"],
+        "description": "A new default message",
+        "color": "4607"
     }
 
     fields = []
