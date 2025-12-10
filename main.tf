@@ -80,7 +80,7 @@ module "lambda" {
   handler                        = "main.lambda_handler"
   source_path                    = "${path.module}/functions/main.py"
   recreate_missing_package       = var.recreate_missing_package
-  runtime                        = "python3.9"
+  runtime                        = "python3.10"
   timeout                        = 30
   kms_key_arn                    = var.kms_key_arn
   reserved_concurrent_executions = var.reserved_concurrent_executions

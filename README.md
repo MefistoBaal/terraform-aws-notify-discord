@@ -9,7 +9,7 @@ in your Discord space.
 
 ## Supported Features
 
-- AWS Lambda runtime Python 3.9
+- AWS Lambda runtime Python 3.10
 - Create new SNS topic or use existing one
 - Support plaintext and encrypted version of Discord webhook URL
 - Most of Discord message options are customizable
